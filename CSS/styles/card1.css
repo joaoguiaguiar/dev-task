@@ -1,0 +1,40 @@
+.card1 {
+    grid-area: card1;
+    margin-left: 4rem;
+  
+}
+
+
+.card1{
+    width: 350px !important;
+    height: 500px;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    font-size: 1.3rem;
+}
+
+
+.container__radius{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__btn{
+    text-align: center;
+    margin-top: 1rem;
+}
+

@@ -1,0 +1,52 @@
+.card2 {
+  grid-area: card2;
+}
+
+
+
+.card2 {
+  height: 600px;
+}
+
+
+
+.title__cad2 {
+  text-align: center;
+}
+
+.lista__de__tarfas{
+  padding: 2rem;
+}
+
+.cardItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E9E3DF;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cardItem article:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardItem i {
+  font-size: 1.5rem;
+  color: #941522;
+  cursor: pointer;
+}
+
+.container__grupChackbox{
+  display: flex;
+  align-items: center;
+}
+
+
+.lista__de__tarfas{
+  margin-top: 4rem !important;
+}

@@ -1,0 +1,94 @@
+@import url('./styles/card1.css');
+@import url('./styles/card2.css');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --cor-de-fundo: #;
+}
+
+
+
+body {
+    height: 100vh;
+    background-color: var(--cor-de-fundo);
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+header {
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: 'card1 card2';
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    column-gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card {
+  background-color: #fffbfb;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+
+
+.tarefas-container {
+  max-width: 100%; 
+  margin: 0 auto;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.lista__de__tarfas {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.cardItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: .5rem;
+  background-color: #f9f9f9;
+}
+
+
+.cardItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container__grupChackbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardItem label {
+  font-size: 16px;
+}

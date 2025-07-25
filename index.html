@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>DevTask 💻</h1>
+        </nav>
+    </header>
+    <main>
+
+
+        <div class="content-card card1">
+            <h2 class="title__cad1">Criar tarefa 📝</h2>
+            <hr>
+            <form action="get">
+                <fieldset class="form-group">
+                    <label for="taskName" class="form-label">Nome da tarefa</label>
+                    <input type="textsss" class="form-control" id="taskName">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="taskDescription" class="form-label">Descrição</label>
+                    <textarea name="taskDescription" id="taskDescription" rows="3"
+                        placeholder="Ex: Focar em React..."></textarea>
+                </fieldset>
+                <fieldset class="form-group ">
+                    <legend>Prioridade :</legend>
+                    <article class="container__radius">
+                        <div>
+                            <input type="radio" id="huey" name="drone" value="huey" checked />
+                            <label for="huey">baixa</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dewey" name="drone" value="dewey" />
+                            <label for="dewey">Média</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="louie" name="drone" value="louie" />
+                            <label for="louie">Alta</label>
+                        </div>
+                    </article>
+                </fieldset>
+                <div class="container__btn">
+                    <button type="button" class="btn btn-primary">Criar</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="content-card card2">
+            <h2 class="title__cad2">Lista de Tarefas</h2>
+            <hr>
+
+            <section>
+                <div class="tarefas-container">
+                    <form>
+                        <fieldset>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                placeholder="Pesquisar...." type="search">
+                            <datalist id="datalistOptions">
+                                <option value="Wordpress">
+                                <option value="React">
+                                <option value="Node">
+                                <option value="Mongo DB">
+                                <option value="MySQL">
+                            </datalist>
+                        </fieldset>
+                    </form>
+
+                    <ul class="lista__de__tarfas" id="lista__de__tarefas">
+
+                
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+        <script type="module" src="./JS/listaTarefas.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "scales1",
+    "tarefa": "Ler a Bíblia",
+    "concluida": true
+  },
+  {
+    "id": "scales2",
+    "tarefa": "Fazer exercícios",
+    "concluida": true
+  },
+  {
+    "id": "scales3",
+    "tarefa": "Estudar programação",
+    "concluida": true
+  },
+  {
+    "id": "scales4",
+    "tarefa": "Cozinhar jantar",
+    "concluida": true
+  },
+  {
+    "id": "scales5",
+    "tarefa": "Ler um livro",
+    "concluida": true
+  }
+]
