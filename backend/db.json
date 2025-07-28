@@ -2,26 +2,30 @@
   {
     "id": "scales1",
     "tarefa": "Ler a Bíblia",
+    "descricao": "Leitura diária do Novo Testamento por 20 minutos.",
+    "prioridade": "Alta",
     "concluida": true
   },
   {
     "id": "scales2",
     "tarefa": "Fazer exercícios",
+    "descricao": "Treino funcional de 30 minutos em casa.",
+    "prioridade": "Média",
     "concluida": true
   },
   {
     "id": "scales3",
     "tarefa": "Estudar programação",
+    "descricao": "Foco em JavaScript e projetos pessoais.",
+    "prioridade": "Alta",
     "concluida": true
   },
   {
     "id": "scales4",
     "tarefa": "Cozinhar jantar",
-    "concluida": true
-  },
-  {
-    "id": "scales5",
-    "tarefa": "Ler um livro",
+    "descricao": "Preparar arroz, feijão e frango grelhado.",
+    "prioridade": "Baixa",
     "concluida": true
   }
 ]
+

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,15 +18,13 @@
         </nav>
     </header>
     <main>
-
-
         <div class="content-card card1">
             <h2 class="title__cad1">Criar tarefa 📝</h2>
             <hr>
             <form action="get">
                 <fieldset class="form-group">
                     <label for="taskName" class="form-label">Nome da tarefa</label>
-                    <input type="textsss" class="form-control" id="taskName">
+                    <input type="text" class="form-control" id="taskName">
                 </fieldset>
 
                 <fieldset class="form-group">
@@ -57,12 +54,9 @@
                 </div>
             </form>
         </div>
-
-
         <div class="content-card card2">
             <h2 class="title__cad2">Lista de Tarefas</h2>
             <hr>
-
             <section>
                 <div class="tarefas-container">
                     <form>
@@ -78,30 +72,38 @@
                             </datalist>
                         </fieldset>
                     </form>
-
-                    <ul class="lista__de__tarfas" id="lista__de__tarefas">
-
-                
-                    </ul>
+                    <div class="container__results">
+                        <h3 class="title__results">Resultado da Pesquisa :<div class="results__pesquisa"></div>
+                        </h3>
+                    </div>
+                    <ul class="lista__de__tarfas" id="lista__de__tarefas"></ul>
+                    <div class="d-flex justify-content-between container__buttons">
+                        <button id="btnPrev" class="btn btn-outline-primary mt-3">← Voltar</button>
+                        <button id="btnNext" class="btn btn-outline-primary">Próxima →</button>
+                    </div>
                 </div>
             </section>
-
-
-
-
-
-
         </div>
-
-
     </main>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-        <script type="module" src="./JS/listaTarefas.js"></script>
+    <!-- Modal Bootstrap -->
+    <div class="modal fade" id="modalTarefa" tabindex="-1" aria-labelledby="modalTarefaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitulo">Título da Tarefa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Descrição:</strong> <span id="modalDescricao"></span></p>
+                    <p><strong>Prioridade:</strong> <span id="modalPrioridade"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"crossorigin="anonymous"></script>
+    <script src="./JS/responsive.js"></script>
+    <script src="./JS/listaTarefas.js" type="module"></script>
+    <script src="./JS/cadastrarTarefas.js" type="module"></script>
+    <script src="./JS/buscaTarefa.js" type="module"></script>
 </body>
 </html>

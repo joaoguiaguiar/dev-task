@@ -92,3 +92,192 @@ main {
 .cardItem label {
   font-size: 16px;
 }
+
+
+.container__buttons{
+  margin-top: 2rem;
+}
+
+/* Adicione essas regras ao seu style.css existente */
+
+/* Botão flutuante para mobile */
+.mobile-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Overlay para modal mobile */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Responsivo para tablets */
+@media (max-width: 992px) {
+    header {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'card1'
+            'card2';
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .card1 {
+        margin-left: 0;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .card2 {
+        height: auto;
+    }
+
+    .container__radius {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .container__radius > div {
+        justify-content: flex-start;
+    }
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .mobile-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .content-card {
+        padding: 1.5rem;
+        margin: 0;
+    }
+
+    /* Card1 vira modal no mobile */
+    .card1 {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        width: 90%;
+        max-width: 400px;
+        max-height: 90vh;
+        overflow-y: auto;
+        margin-left: 0;
+    }
+
+    .card1.active {
+        display: block;
+    }
+
+    .card2 {
+        margin-bottom: 80px; /* Espaço para o botão flutuante */
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .container__buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .container__buttons button {
+        width: 100%;
+    }
+
+    .lista__de__tarfas {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .cardItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.75rem;
+    }
+
+    .cardItem article:first-child {
+        width: 100%;
+    }
+}
+
+/* Mobile muito pequeno */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.3rem;
+        padding: 0.75rem;
+    }
+
+    .content-card {
+        padding: 1rem;
+    }
+
+    .mobile-toggle {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.2rem;
+    }
+
+    .card1 {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .container__radius {
+        gap: 0.25rem;
+    }
+
+    .container__radius > div {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.25rem;
+    }
+}
